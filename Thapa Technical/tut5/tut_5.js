@@ -1,10 +1,3 @@
-/*
-    TODO:  #5: Mastering the Node.js Core Modules | File System Node.js Module in Hindi in 2020
-    ? https://www.youtube.com/watch?v=5uZDLL0zaWg&list=PLwGdqUZWnOp00IbeN0OtL9dmnasipZ9x8&index=5
-    * Learn about core modules
-    ! buf_data -> org_data
-*/
-
 const fs=require("fs");
 const { exit } = require("process");
 //cearting na new file
@@ -18,7 +11,7 @@ const { exit } = require("process");
 
 
 const buf_data=fs.readFileSync('read.txt');
-console.log(buf_data);
+// console.log(buf_data);
 
 //Node.js includes an additional data type called bffer
 //(not available in browser's javaScript).
@@ -27,4 +20,5 @@ console.log(buf_data);
 
 org_data = buf_data.toString();
 
-console.log(org_data);
+// console.log(org_data);
+fs.renameSync("read.txt","abc.txt");

@@ -11,7 +11,12 @@ const osfreemem = os.freemem();
 // console.log(osfreemem);
 // console.log(`${osfreemem/1024/1024/1024}`);
 const tmem = os.totalmem();
-
 // console.log(tmem);
 // console.log(`${tmem/1024/1024/1024}`);
+
+console.log(os.hostname());
+console.log(os.platform());
+console.log(os.tmpdir());
+console.log(os.type());
+
 
